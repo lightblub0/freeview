@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free View</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+
+        <div class="url">
+            
+            <!-- <button class="ip" id="ip">button</button> -->
+
+            <input type="url" id="url" pattern='^linkedin\.com/' required>
+
+            <input id="num" type="number" min="0" max="20" onkeyup="if(parseInt(this.value)>20){ this.value =20; return false; }"
+            >
+            <button id="nv">Submit</button>
+            <button onclick="refreshPage()" >Refresh Page</button>
+        </div>
+
+
+
+        <div class="result" id="result">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
